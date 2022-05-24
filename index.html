@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="js/index.js">
     <title>Document</title>
     <style>
         header{
@@ -16,14 +15,20 @@
             height: 40vh;
             margin: 0 auto;
             background-position: center center;
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(150, 150, 150, 0.4), rgb(255, 255, 255)), url(img/background.jpg);
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(35, 35, 35, 0.4), rgb(60, 60, 60)), url(img/background.jpg);
         }
     </style>
 </head>
 <header>
     <h1>MINICRAFT WIKI</h1>
     <div class="menu">
-        <button>ITEMS</button>
+        <button onmouseenter="showDetail()">ITEMS</button>
+        <div id="items" onmouseleave="hideDetail()">
+            <a href="">방어구</a><br>
+            <a href="">무기</a><br>
+            <a href="">룬</a><br>
+            <a href="">기타</a><br>
+        </div>
         <button>MOBS</button>
         <button>LOCATIONS</button>
         <button>MISC</button>
@@ -32,8 +37,26 @@
 </header>
 <body>
     <main>
-        <h2>MAIN</h2>
-        <p>이것은 입에서 나는 소리가 아니여 ah ah ah sonic mania oh what is this ah music ah what the hoho<br>int main은 좋아요 int 함수이름 (int 변수)는 좋아요 매우좋군요.<br>Hello World!는 좋아요.</p>
+        <h2 class="htwo">MAIN PAGE</h2>
+        <div class="mainbody">
+            <div class="mainleft">
+                <div id="welcome"><h2 style="color: rgb(29, 29, 29); letter-spacing: 5px;">WELCOME</h2></div>
+                <div class="welcome">
+                    <h3>MINICRAFT WIKI에 오신 것을 환영합니다!</h3>
+                    <p style="color: silver;">0개의 문서가 있습니다. since 2022년 5월 24일</p>
+                </div>
+                <div id="description"><h2 style="color: rgb(29, 29, 29); letter-spacing: 5px;">DESCRIPTION</h2></div>
+                <div class="description">
+                    <h3>MINICRAFT에 관한 모든 설명을 이곳, MINICRAFT WIKI에서 찾아보실 수 있습니다.</h3>
+                    <p style="color: silver;">Discode 명령어나 게임에 관련된 무기, 스탯 등의 정보를 얻어서 볼 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="mainright">
+                <div id="news"><h2 style="color: white; letter-spacing: 5px;">NEWS</h2></div>
+                <div>hello</div>
+            </div>
+        </div>
+        
     </main>
     <footer>
         <div>
@@ -44,5 +67,6 @@
             <P></P>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

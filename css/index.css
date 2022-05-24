@@ -9,7 +9,7 @@
 body{
     padding-top: 300px;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(60, 60, 60);
     height: 500vh;
 }
 header{
@@ -26,6 +26,7 @@ header h1{
     margin-bottom: -50px;
 }
 .menu{
+    z-index: 10;
     display: flex;
     width: 100%;
     height: 50px;
@@ -48,28 +49,86 @@ header h1{
 .menu button:hover{
     transform: scale(1.2);
 }
+#items{
+    z-index: -1;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: gray;
+    height: 260px;
+    width: 120px;
+    position: absolute;
+    left: 400px;
+    top: 167px;
+}
+#items a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
 main{
     margin: 10px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: rgb(255, 242, 231);
+    align-items: center;
+    background-color: rgb(29, 29, 29);
     border-radius: 10px;
     height: 100%;
     width: 180vh;
-    text-align: start;
+    text-align: center;
     margin: 0 auto;
     margin-bottom: 100px;
 }
-main h2{
+.htwo{
+    margin-bottom: 20px;
+    margin-top: 20px;
     letter-spacing: 2px;
-    background: rgba(121, 113, 94, 0.4);
-    width: 100%;
+    width: 98%;
+    height: 60px;
+    border-bottom: solid 6px black;
 }
-main p{
-    margin: 10px;
-    color: black;
-    font-size: 24px;
+.mainbody{
+    text-align: center;
+    display: flex;
+    height: 100%;
+    width: 95%;
+}
+.mainleft{
+    height: 100%;
+    width: 70%;
+}
+#welcome{
+    background: linear-gradient(100deg,  rgb(255, 229, 142) 50%, rgb(255, 204, 0) 50%);
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome{
+    width: 100%;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+#description{
+    background: linear-gradient(100deg,  rgb(142, 221, 255) 50%, rgb(0, 195, 255) 50%);
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    width: 100%;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.mainright{
+    height: 100%;
+    width: 30%;
 }
 footer{
     background-color: rgb(124, 124, 124);
