@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@font-face {
+    font-family: 'CookieRunOTF-Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     margin: 0;
     padding: 0;
@@ -22,6 +34,7 @@ header{
     align-items: center;
 }
 header h1{
+    font-family: 'CookieRunOTF-Black';
     font-size: 50px;
     margin-bottom: -50px;
 }
@@ -35,6 +48,7 @@ header h1{
     align-items: center;
 }
 .menu button{
+    font-family: 'CookieRun-Regular';
     transition: all 0.2s;
     cursor: pointer;
     font-size: 18px;
