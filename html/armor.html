@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/armor.css">
+    <title>Document</title>
+    <style>
+        header{
+            padding-top: 1px;
+            background-repeat : no-repeat;
+            background-size : cover;
+            width: 100%;
+            height: 40vh;
+            margin: 0 auto;
+            background-position: center center;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(35, 35, 35, 0.4), rgb(60, 60, 60)), url(/img/background.jpg);
+        }
+    </style>
+</head>
+<header>
+    <a href="/index.html"><h1>MINICRAFT WIKI</h1></a>
+    <div class="menu">
+        <button onmouseenter="showDetail()">ITEMS</button>
+        <div id="items" onmouseleave="hideDetail()">
+            <a href="">방어구</a><br>
+            <a href="">무기</a><br>
+            <a href="">현석</a><br>
+            <a href="">기타</a><br>
+        </div>
+        <button>MOBS</button>
+        <button>LOCATIONS</button>
+        <button>MISC</button>
+        <button>COMMUNITY</button>
+    </div>
+</header>
+<body>
+    <main>
+        <h2 class="htwo">ARMOR PAGE</h2>
+        <div class="mainbody">
+            <div class="mainleft"></div>
+            <div class="mainright"></div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h4>MINICRAFT</h4>
+        </div>
+        <div>
+            <h4>COMMUNITY</h4>
+            <P></P>
+        </div>
+    </footer>
+    <script src="/js/armor.js"></script>
+</body>
+</html>
